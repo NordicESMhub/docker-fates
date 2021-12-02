@@ -2,6 +2,11 @@
 
 docker container for running fates-emerald. It uses containers automatically generated from [biocontainers](https://biocontainers.pro/) 
 
+## Pull the container locally
+
+```
+docker pull quay.io/nordicesmhub/docker-fates:2.0.1
+```
 
 ## How to use it?
 
@@ -35,3 +40,12 @@ create_newcase --case /opt/esm/cases/fates_alp1 --compset 2000_DATM%1PTGSWP3_CLM
 ```
 
 To know more on how to run FATES, follow the [online tutorial on FATES](https://training.galaxyproject.org/training-material/topics/climate/tutorials/fates-jupyterlab/tutorial.html).
+
+
+## Need to build a new container?
+
+To build the container locally, first clone this repository and then:
+
+```
+docker build . -t docker-fates:latest
+```
